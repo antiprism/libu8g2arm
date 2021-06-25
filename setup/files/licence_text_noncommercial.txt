@@ -1,0 +1,40 @@
+##########################################################################
+Files: src/csrc/fonts_noncommercial/*
+
+fntgrpbitfontmaker2: fancypixels
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+FancyPixels by ClockworkPrince http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=3287 license : (Creative Commons NonCommercial)
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: iconquadpix
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+IconQuadPix by ravee de http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=244 license : (Creative Commons NonCommercial)
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: lastapprenticebold
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+LastApprenticeBold by AlexanderZaytsev http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=1323 license : (Creative Commons NonCommercial)
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: lastapprenticethin
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+LastApprenticeThin by AlexanderZaytsev http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=1324 license : (Creative Commons NonCommercial)
+-----------------------------------------------------------------------------
+fntgrpfontstruct: lucasarts_scumm_subtitle
+https://github.com/olikraus/u8g2/wiki/fntgrpfontstruct
+
+LucasArts SCUMM - Subtitle - Roman Outline
+Reference
+Link: https://fontstruct.com/fontstructions/show/786126/lucasarts-scumm-subtitle-roman-outline
+
+Copyright
+The FontStruction “LucasArts SCUMM - Subtitle - Roman Outline” (https://fontstruct.com/fontstructions/show/786126) by “Goatmeal” is licensed under a Creative Commons Attribution Non-commercial Share Alike license (http://creativecommons.org/licenses/by-nc-sa/3.0/). “LucasArts SCUMM - Subtitle - Roman Outline” was originally cloned (copied) from the FontStruction “LucasArts SCUMM - Subtitle - Roman” (https://fontstruct.com/fontstructions/show/778619) by “Goatmeal”, which is licensed under a Creative Commons Attribution Non-commercial Share Alike license (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+LucasArts SCUMM - Subtitle - Roman
+Reference
+Link: https://fontstruct.com/fontstructions/show/778619/lucasarts-scumm-subtitle-roman
+
+Copyright
+The FontStruction “LucasArts SCUMM - Subtitle - Roman” (https://fontstruct.com/fontstructions/show/778619) by “Goatmeal” is licensed under a Creative Commons Attribution Non-commercial Share Alike license (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+

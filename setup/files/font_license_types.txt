@@ -1,0 +1,73 @@
+PERMISSIVE
+
+fntgrpadobex11: all
+fntgrpangel: all
+fntgrpbitfontmaker2: adventurer
+fntgrpbitfontmaker2: bracketedbabies
+fntgrpbitfontmaker2: frikativ
+fntgrpbitfontmaker2: heavybottom
+fntgrpbitfontmaker2: tallpix
+fntgrpchristinaneofotistou: all
+fntgrpcodeman38: all
+fntgrpcrox: all
+fntgrpcu12: all
+fntgrpdafont: all
+fntgrpefont: all
+fntgrpextant: all
+fntgrpfontstruct: amstrad_cpc_extended
+fntgrpfontstruct: lucasfont_alternate
+fntgrpfontstruct: p01type
+fntgrpfreeuniversal: all
+fntgrpgeoff: all
+fntgrpgilesbooth: all
+fntgrpinconsolata: all
+fntgrpjapanyoshi: all
+fntgrpjaywright: all
+fntgrpjosephknightcom: all
+fntgrplogisoso: all
+fntgrplucida: all
+fntgrpmistressellipsis: all
+fntgrpoldstandard: all
+fntgrpopengameart: all
+fntgrppentacom: all
+fntgrppersian: all
+fntgrpprofont: all
+fntgrptlwg: all
+fntgrptlwg: all
+fntgrptomthumb: all
+fntgrptulamide: all
+fntgrpu8g: all
+fntgrpttyp0: all
+fntgrpx11: all
+fntgrpiconic: all
+fntgrpacademiasinica: all
+
+
+GPL COPYLEFT
+
+fntgrpfontstruct: baby
+fntgrpfontstruct: blipfest_07
+fntgrpfontstruct: chikita
+fntgrpfontstruct: pixelle_micro
+fntgrpfontstruct: robot_de_niro
+fntgrpfontstruct: trixel_square
+fntgrpfontstruct: haxrcorp4089
+fntgrpfontstruct: bubble
+fntgrpfontstruct: cardimon_pixel
+fntgrpfontstruct: maniac
+fntgrpnbp: all
+fntgrpoldschoolpcfonts: all
+fntgrpunifont: all
+fntgrpwqy: all
+fntgrpsiji: all
+
+
+NONOCOMMERCIAL
+
+fntgrpbitfontmaker2: fancypixels
+fntgrpbitfontmaker2: iconquadpix
+fntgrpbitfontmaker2: lastapprenticebold
+fntgrpbitfontmaker2: lastapprenticethin
+fntgrpfontstruct: lucasarts_scumm_subtitle
+
+

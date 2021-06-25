@@ -1,0 +1,21 @@
+# local install of libu8g2arm with, e.g. ./configure --prefix="/home/pi/inst"
+INST=@prefix@
+
+CPPFLAGS += -W -Wall -I$(INST)/include/
+LDFLAGS += -L$(INST)/lib
+LDLIBS += -l:libu8g2arm.a
+CXXFLAGS += -std=c++11
+
+ifdef ENABLE_SDL
+  CPPFLAGS += -DENABLE_SDL
+  LDLIBS += -lSDL2
+endif
+
+default:
+
+ex_init_command_line: ex_init_command_line.cpp u8x8_d_sdl.o
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $^ $(LDLIBS) -o $@
+
+clean:
+	rm ex_init_class ex_init_c ex_init_runtime ex_extra_fonts \
+	ex_init_command_line *.o

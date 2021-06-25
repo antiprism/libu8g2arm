@@ -1,0 +1,10 @@
+The following license files apply
+
+Source: a list of all licenses follows below
+Binaries:
+  libu8g2arm library: COPYING_permissive
+  libu8g2arm_fonts_gplcopyleft library: COPYING_gplcopyleft
+  libu8g2arm_fonts_noncommercial library: COPYING_noncommercial
+
+
+
