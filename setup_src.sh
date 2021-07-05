@@ -67,6 +67,9 @@ sed -i 's! : public Print!!' ${SRC_DIR}/cppsrc/U8g2lib.h
 
 sed -i $'s!^int main.*!#include "font_build_inc.c"\\\n\\\nint main_orig(void)!' ${SRC_DIR}/setup/font/build/build.c
 
+BUILD_UNIFONT="bdfconv/bdfconv -f 1 -m \$0000-\$ffff bdf/unifont.bdf -o build/single_font_files/u8g2_font_unifont_world.c -n u8g2_font_unifont_world"
+(cd src/setup/font/bdfconv && rm -f bdfconv && make && cd .. && ${BUILD_UNIFONT})
+
 (cd src/setup/font/build && rm -f build1 && make && ./build1)
 
 FONTS_DIR=${SRC_DIR}/setup/font/build/

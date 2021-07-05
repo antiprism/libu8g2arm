@@ -214,4 +214,5 @@ const font_lookup u8g2_fonts_gplcopyleft[] = {
   { "u8g2_font_px437wyse700b_mf", "px437wyse700b", "fntgrpoldschoolpcfonts", u8g2_font_px437wyse700b_mf},
   { "u8g2_font_px437wyse700b_mr", "px437wyse700b", "fntgrpoldschoolpcfonts", u8g2_font_px437wyse700b_mr},
   { "u8g2_font_px437wyse700b_mn", "px437wyse700b", "fntgrpoldschoolpcfonts", u8g2_font_px437wyse700b_mn},
+  { "u8g2_font_unifont_world", "unifont", "fntgrpunifont", u8g2_font_unifont_world},
 };

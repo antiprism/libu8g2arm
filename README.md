@@ -155,6 +155,9 @@ covered by the GPL and not the LGPL. To use noncommercial fonts, additionally
 include `libu8g2arm/u8g2_fonts_noncommercial.h` and link to
 `libu8g2fonts_noncommercial` (additional licence: COPYING_noncommercial).
 
+An extra font, `u8g2_font_unifont_world`, is included with the copyleft fonts
+and includes unifont glyphs for many of the world's languages.
+
 ### Notes
 
 The software I2C and SPI drivers may be unacceptably slow. I recommend

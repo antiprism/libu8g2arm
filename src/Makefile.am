@@ -1886,6 +1886,7 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_unifont_t_vietnamese1.c \
 	csrc/fonts_gplcopyleft/u8g2_font_unifont_t_vietnamese2.c \
 	csrc/fonts_gplcopyleft/u8g2_font_unifont_t_weather.c \
+	csrc/fonts_gplcopyleft/u8g2_font_unifont_world.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese1.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese2.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese3.c \

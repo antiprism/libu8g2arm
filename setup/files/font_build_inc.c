@@ -273,6 +273,24 @@ int main(void)
 
   do_font_loop(txtconv);
 
+  // add extra fonts
+  int font_licence_type = 2;
+  const char *font_id = "u8g2_font_unifont_world";
+
+  snprintf(buff, buff_sz, "cp single_font_files/%s.c %s",
+           font_id, font_dirs[font_licence_type]);
+  system(buff);
+  snprintf(buff, buff_sz,
+           "echo 'extern const uint8_t %s[] U8G2_FONT_SECTION(\"%s\");' >> "
+           "%s/u8g2_font_decls.txt",
+           font_id, font_id, font_dirs[font_licence_type]);
+  system(buff);
+  snprintf(buff, buff_sz,
+           "echo '  { \"%s\", \"%s\", \"%s\", %s},' >> %s/u8g2_font_lookup.txt",
+           font_id, "unifont", "fntgrpunifont", font_id,
+           font_dirs[font_licence_type]);
+  system(buff);
+
   // skip unknown == 0
   for(int i=1; i<4; i++) {
     const char *dir = font_dirs[i];

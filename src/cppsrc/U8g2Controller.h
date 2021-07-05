@@ -327,7 +327,7 @@ public:
    *      required: clock,data
    *      optional: rotation,reset,i2c_address
    *    4W_HW_SPI - 4 wire hardware SPI
-   *      required: cs,dc
+   *      required: dc
    *      optional: rotation,reset,bus_number,cs_number
    *    4W_SW_SPI - 4 wire software SPI
    *      required: clock,data,cs,dc
