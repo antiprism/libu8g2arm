@@ -1,7 +1,7 @@
 lib_LTLIBRARIES = libu8g2arm.la
 libu8g2arm_la_SOURCES =
 libu8g2arm_la_LIBADD = libu8g2armport.la libu8g2armcsrc.la
-libu8g2arm_la_LDFLAGS = -release 2.29.8
+libu8g2arm_la_LDFLAGS = -release 2.29.9
 noinst_LTLIBRARIES = libu8g2armport.la libu8g2armcsrc.la
 
 libu8g2armport_la_SOURCES = \
@@ -44,6 +44,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/u8x8_capture.c \
 	csrc/u8x8_d_a2printer.c \
 	csrc/u8x8_debounce.c \
+	csrc/u8x8_d_hd44102.c \
 	csrc/u8x8_d_il3820_296x128.c \
 	csrc/u8x8_display.c \
 	csrc/u8x8_d_ist3020.c \
@@ -1704,7 +1705,7 @@ libu8g2armcsrc_la_SOURCES = \
 	# terminate list
 
 lib_LTLIBRARIES += libu8g2fonts_gplcopyleft.la
-libu8g2fonts_gplcopyleft_la_LDFLAGS = -release 2.29.8
+libu8g2fonts_gplcopyleft_la_LDFLAGS = -release 2.29.9
 libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_astragal_nbp_tf.c \
 	csrc/fonts_gplcopyleft/u8g2_font_astragal_nbp_tn.c \
@@ -1938,7 +1939,7 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	# terminate list
 
 lib_LTLIBRARIES += libu8g2fonts_noncommercial.la
-libu8g2fonts_noncommercial_la_LDFLAGS = -release 2.29.8
+libu8g2fonts_noncommercial_la_LDFLAGS = -release 2.29.9
 libu8g2fonts_noncommercial_la_SOURCES = \
 	csrc/fonts_noncommercial/u8g2_font_fancypixels_tf.c \
 	csrc/fonts_noncommercial/u8g2_font_fancypixels_tr.c \
