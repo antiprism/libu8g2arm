@@ -111,6 +111,8 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
       strcmp(fn, "lucasfont_alternate") == 0
       ||
       strcmp(fn, "p01type") == 0
+      ||
+      strcmp(fn, "m_c_kids_nes_credits_font") == 0
       )
     )
     ||
@@ -161,6 +163,8 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
     strcmp(gr, "fntgrpiconic") == 0
     ||
     strcmp(gr, "fntgrpacademiasinica") == 0
+    ||
+    strcmp(gr, "fntgrpstreamline") == 0
     )
     font_licence_type = 1; /* permissive */
   else if(
@@ -184,6 +188,10 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
       strcmp(fn, "cardimon_pixel") == 0
       ||
       strcmp(fn, "maniac") == 0
+      ||
+      strcmp(fn, "chargen_92") == 0
+      ||
+      strcmp(fn, "utopia24") == 0
       )
     )
     ||

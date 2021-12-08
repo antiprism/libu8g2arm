@@ -1,7 +1,7 @@
 lib_LTLIBRARIES = libu8g2arm.la
 libu8g2arm_la_SOURCES =
 libu8g2arm_la_LIBADD = libu8g2armport.la libu8g2armcsrc.la
-libu8g2arm_la_LDFLAGS = -release 2.29.9
+libu8g2arm_la_LDFLAGS = -release 2.32.6
 noinst_LTLIBRARIES = libu8g2armport.la libu8g2armcsrc.la
 
 libu8g2armport_la_SOURCES = \
@@ -16,9 +16,12 @@ libu8g2armport_la_SOURCES = \
 	# terminate list
 
 libu8g2armcsrc_la_SOURCES = \
+	csrc/mui.c \
+	csrc/mui_u8g2.c \
 	csrc/u8g2_bitmap.c \
 	csrc/u8g2_box.c \
 	csrc/u8g2_buffer.c \
+	csrc/u8g2_button.c \
 	csrc/u8g2_circle.c \
 	csrc/u8g2_cleardisplay.c \
 	csrc/u8g2_controllers.c \
@@ -44,6 +47,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/u8x8_capture.c \
 	csrc/u8x8_d_a2printer.c \
 	csrc/u8x8_debounce.c \
+	csrc/u8x8_d_gu800.c \
 	csrc/u8x8_d_hd44102.c \
 	csrc/u8x8_d_il3820_296x128.c \
 	csrc/u8x8_display.c \
@@ -88,6 +92,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/u8x8_d_ssd1606_172x72.c \
 	csrc/u8x8_d_ssd1607_200x200.c \
 	csrc/u8x8_d_st7511.c \
+	csrc/u8x8_d_st75160.c \
 	csrc/u8x8_d_st75256.c \
 	csrc/u8x8_d_st7528.c \
 	csrc/u8x8_d_st75320.c \
@@ -104,6 +109,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/u8x8_d_uc1601.c \
 	csrc/u8x8_d_uc1604.c \
 	csrc/u8x8_d_uc1608.c \
+	csrc/u8x8_d_uc1609.c \
 	csrc/u8x8_d_uc1610.c \
 	csrc/u8x8_d_uc1611.c \
 	csrc/u8x8_d_uc1617.c \
@@ -118,6 +124,8 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/u8x8_string.c \
 	csrc/u8x8_u16toa.c \
 	csrc/u8x8_u8toa.c \
+	csrc/mui.h \
+	csrc/mui_u8g2.h \
 	csrc/u8g2_controllers.h \
 	csrc/u8g2.h \
 	csrc/u8x8.h \
@@ -312,6 +320,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_b16_t_japanese2.c \
 	csrc/fonts_permissive/u8g2_font_b16_t_japanese3.c \
 	csrc/fonts_permissive/u8g2_font_battery19_tn.c \
+	csrc/fonts_permissive/u8g2_font_battery24_tr.c \
 	csrc/fonts_permissive/u8g2_font_bauhaus2015_tn.c \
 	csrc/fonts_permissive/u8g2_font_bauhaus2015_tr.c \
 	csrc/fonts_permissive/u8g2_font_BBSesque_te.c \
@@ -1064,6 +1073,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_m2icon_9_tf.c \
 	csrc/fonts_permissive/u8g2_font_mademoiselle_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_mademoiselle_mel_tr.c \
+	csrc/fonts_permissive/u8g2_font_m_c_kids_nes_credits_font_tr.c \
 	csrc/fonts_permissive/u8g2_font_michaelmouse_tu.c \
 	csrc/fonts_permissive/u8g2_font_micro_mn.c \
 	csrc/fonts_permissive/u8g2_font_micro_mr.c \
@@ -1343,11 +1353,79 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_sirclivethebold_tr.c \
 	csrc/fonts_permissive/u8g2_font_sirclive_tn.c \
 	csrc/fonts_permissive/u8g2_font_sirclive_tr.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_b6_tn.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_b6_tr.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_b7_tn.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_b7_tr.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_r6_tn.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_r6_tr.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_r7_tn.c \
+	csrc/fonts_permissive/u8g2_font_squeezed_r7_tr.c \
 	csrc/fonts_permissive/u8g2_font_squirrel_tn.c \
 	csrc/fonts_permissive/u8g2_font_squirrel_tr.c \
 	csrc/fonts_permissive/u8g2_font_squirrel_tu.c \
 	csrc/fonts_permissive/u8g2_font_sticker_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_sticker_mel_tr.c \
+	csrc/fonts_permissive/u8g2_font_streamline_all_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_building_real_estate_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_business_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_coding_apps_websites_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_computers_devices_electronics_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_content_files_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_design_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_ecology_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_email_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_entertainment_events_hobbies_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_food_drink_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_hand_signs_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_health_beauty_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_action_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_alert_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_audio_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_calendar_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_chart_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_circle_triangle_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_cog_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_cursor_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_dial_pad_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_edit_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_expand_shrink_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_eye_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_file_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_help_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_hierarchy_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_home_menu_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_id_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_key_lock_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_link_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_loading_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_login_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_other_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_paginate_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_search_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_setting_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_share_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_text_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_wifi_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_interface_essential_zoom_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_internet_network_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_logo_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_map_navigation_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_money_payments_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_music_audio_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_pet_animals_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_phone_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_photography_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_romance_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_school_science_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_shopping_shipping_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_social_rewards_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_technology_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_transportation_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_travel_wayfinding_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_users_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_video_movies_t.c \
+	csrc/fonts_permissive/u8g2_font_streamline_weather_t.c \
 	csrc/fonts_permissive/u8g2_font_t0_11b_me.c \
 	csrc/fonts_permissive/u8g2_font_t0_11b_mf.c \
 	csrc/fonts_permissive/u8g2_font_t0_11b_mn.c \
@@ -1699,13 +1777,14 @@ libu8g2armcsrc_la_SOURCES = \
 	cppsrc/U8g2Controller.cpp \
 	cppsrc/U8g2lib.cpp \
 	cppsrc/U8x8lib.cpp \
+	cppsrc/MUIU8g2.h \
 	cppsrc/U8g2Controller.h \
 	cppsrc/U8g2lib.h \
 	cppsrc/U8x8lib.h \
 	# terminate list
 
 lib_LTLIBRARIES += libu8g2fonts_gplcopyleft.la
-libu8g2fonts_gplcopyleft_la_LDFLAGS = -release 2.29.9
+libu8g2fonts_gplcopyleft_la_LDFLAGS = -release 2.32.6
 libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_astragal_nbp_tf.c \
 	csrc/fonts_gplcopyleft/u8g2_font_astragal_nbp_tn.c \
@@ -1730,6 +1809,14 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_cardimon_pixel_tf.c \
 	csrc/fonts_gplcopyleft/u8g2_font_cardimon_pixel_tn.c \
 	csrc/fonts_gplcopyleft/u8g2_font_cardimon_pixel_tr.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_me.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_mf.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_mn.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_mr.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_te.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_tf.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_tn.c \
+	csrc/fonts_gplcopyleft/u8g2_font_chargen_92_tr.c \
 	csrc/fonts_gplcopyleft/u8g2_font_chikita_tf.c \
 	csrc/fonts_gplcopyleft/u8g2_font_chikita_tn.c \
 	csrc/fonts_gplcopyleft/u8g2_font_chikita_tr.c \
@@ -1888,6 +1975,10 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_unifont_t_vietnamese2.c \
 	csrc/fonts_gplcopyleft/u8g2_font_unifont_t_weather.c \
 	csrc/fonts_gplcopyleft/u8g2_font_unifont_world.c \
+	csrc/fonts_gplcopyleft/u8g2_font_utopia24_te.c \
+	csrc/fonts_gplcopyleft/u8g2_font_utopia24_tf.c \
+	csrc/fonts_gplcopyleft/u8g2_font_utopia24_tn.c \
+	csrc/fonts_gplcopyleft/u8g2_font_utopia24_tr.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese1.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese2.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese3.c \
@@ -1939,7 +2030,7 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	# terminate list
 
 lib_LTLIBRARIES += libu8g2fonts_noncommercial.la
-libu8g2fonts_noncommercial_la_LDFLAGS = -release 2.29.9
+libu8g2fonts_noncommercial_la_LDFLAGS = -release 2.32.6
 libu8g2fonts_noncommercial_la_SOURCES = \
 	csrc/fonts_noncommercial/u8g2_font_fancypixels_tf.c \
 	csrc/fonts_noncommercial/u8g2_font_fancypixels_tr.c \
@@ -1971,9 +2062,12 @@ pkginclude_HEADERS = \
 	include/i2c.h \
 	include/spi.h \
 	include/u8g2arm.h \
+	include/mui.h \
+	include/mui_u8g2.h \
 	include/u8g2_controllers.h \
 	include/u8g2.h \
 	include/u8x8.h \
+	include/MUIU8g2.h \
 	include/U8g2Controller.h \
 	include/U8g2lib.h \
 	include/U8x8lib.h \

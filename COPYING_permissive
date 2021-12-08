@@ -672,6 +672,15 @@ Link: http://fontstruct.com/fontstructions/show/lucasfont_alternate
 Copyright
 The FontStruction "Lucasfont Alternate" (http://fontstruct.com/fontstructions/show/653734) by Patrick Lauke is licensed under a Creative Commons Attribution license (http://creativecommons.org/licenses/by/3.0/). "Lucasfont Alternate" was originally cloned (copied) from the FontStruction "Lucasfont" (http://fontstruct.com/FontStructions/show/653577) by Patrick Lauke, which is licensed under a Creative Commons Attribution license (http://creativecommons.org/licenses/by/3.0/).
 -----------------------------------------------------------------------------
+fntgrpfontstruct: m_c_kids_nes_credits_font
+https://github.com/olikraus/u8g2/wiki/fntgrpfontstruct#reference-16
+
+Reference
+Link: https://fontstruct.com/fontstructions/show/1963150/m-c-kids-nes-credits-font
+
+Copyright
+The FontStruction “M.C. Kids (NES) Credits Font” (https://fontstruct.com/fontstructions/show/1963150) by “ParadigmTheGreat” is licensed under a Creative Commons CC0 Public Domain Dedication license (http://creativecommons.org/publicdomain/zero/1.0/).
+-----------------------------------------------------------------------------
 fntgrpfontstruct: p01type
 https://github.com/olikraus/u8g2/wiki/fntgrpfontstruct#p01type
 
@@ -1295,4 +1304,13 @@ u8g2_font_gb24st_t_2
 
 u8g2_font_gb24st_t_3
 
+-----------------------------------------------------------------------------
+fntgrpstreamline: all
+https://github.com/olikraus/u8g2/wiki/fntgrpacademiasinica#copyright
+
+Reference
+Free vectors icons and illustrations from Streamline: https://streamlinehq.com
+
+Copyright
+The "streamline pixel" icons are available for free if the attribution link is provided (https://intercom.help/streamlinehq/en/articles/5354403-how-to-create-an-attribution-link).
 

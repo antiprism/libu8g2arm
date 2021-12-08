@@ -91,6 +91,24 @@ Link: https://fontstruct.com/fontstructions/show/604350/maniac_2
 Copyright
 The FontStruction “Maniac” (https://fontstruct.com/fontstructions/show/604350) by “D-Sheep” is licensed under a Creative Commons Attribution Share Alike license (http://creativecommons.org/licenses/by-sa/3.0/).
 -----------------------------------------------------------------------------
+fntgrpfontstruct: utopia24
+https://github.com/olikraus/u8g2/wiki/fntgrpfontstruct#utopia24
+
+Reference
+Link: https://fontstruct.com/fontstructions/show/1963904/utopia24
+
+Copyright
+The FontStruction “utopia24” (https://fontstruct.com/fontstructions/show/1963904) by “ParadigmTheGreat” is licensed under a Creative Commons Attribution Share Alike license (http://creativecommons.org/licenses/by-sa/3.0/).
+-----------------------------------------------------------------------------
+fntgrpfontstruct: chargen-92
+https://github.com/olikraus/u8g2/wiki/fntgrpfontstruct#chargen-92
+
+Reference
+Link: https://fontstruct.com/fontstructions/show/1599418/chargen-92-1
+
+Copyright
+The FontStruction “CHARGEN '92” (https://fontstruct.com/fontstructions/show/1599418) by “ParadigmTheGreat” is licensed under a Creative Commons Attribution Share Alike license (http://creativecommons.org/licenses/by-sa/3.0/).
+-----------------------------------------------------------------------------
 fntgrpnbp: all
 https://github.com/olikraus/u8g2/wiki/fntgrpnbp#copyright
 

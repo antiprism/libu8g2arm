@@ -122,6 +122,8 @@ public:
    *    CONTROLLER     MODEL               PROTOCOLS
    *    ----------     -----               ---------
    *    
+   *    GU800          128X64              SPI,8080
+   *    
    *    HX1230         96X68               SPI,3W_SW_SPI
    *    
    *    IL3820         296X128             SPI,3W_SW_SPI
@@ -168,6 +170,7 @@ public:
    *                   72X40_WISE          I2C,SPI,3W_SW_SPI,8080
    *    
    *    SH1107         128X128             I2C,SPI,3W_SW_SPI,8080
+   *                   128X80              I2C,SPI,3W_SW_SPI,8080
    *                   64X128              I2C,SPI,3W_SW_SPI,8080
    *                   PIMORONI_128X128    I2C,SPI,3W_SW_SPI,8080
    *                   SEEED_128X128       I2C,SPI,3W_SW_SPI,8080
@@ -184,7 +187,8 @@ public:
    *                   128X64_ADAFRUIT     I2C,SPI,8080
    *                   128X64_RAYSTAR      I2C,SPI,8080
    *    
-   *    SSD1306        128X32_UNIVISION    I2C,SPI,3W_SW_SPI,8080
+   *    SSD1306        102X64_EA_OLEDS102  I2C,SPI,3W_SW_SPI,8080
+   *                   128X32_UNIVISION    I2C,SPI,3W_SW_SPI,8080
    *                   128X32_WINSTAR      I2C,SPI,3W_SW_SPI,8080
    *                   128X64_ALT0         I2C,SPI,3W_SW_SPI,8080
    *                   128X64_NONAME       I2C,SPI,3W_SW_SPI,8080
@@ -235,6 +239,8 @@ public:
    *    
    *    ST7511         AVD_320X240         SPI,3W_SW_SPI,8080
    *    
+   *    ST75160        JM16096             I2C,SPI,3W_SW_SPI,8080
+   *    
    *    ST75256        JLX172104           I2C,SPI,3W_SW_SPI,8080
    *                   JLX19296            I2C,SPI,3W_SW_SPI,8080
    *                   JLX240160           I2C,SPI,3W_SW_SPI,8080
@@ -273,6 +279,7 @@ public:
    *                   PI_132X64           SPI,8080
    *    
    *    ST7571         128X128             I2C,SPI,8080
+   *                   128X96              I2C,SPI,8080
    *    
    *    ST7586S        ERC240160           SPI,3W_SW_SPI,8080
    *                   S028HN118A          SPI
@@ -282,6 +289,7 @@ public:
    *    
    *    ST7920         128X64              8080
    *                   192X32              8080
+   *                   256X32              8080
    *    
    *    T6963          128X64              8080
    *                   128X64_ALT          8080
@@ -299,6 +307,8 @@ public:
    *                   DEM240064           I2C,SPI,3W_SW_SPI,8080
    *                   ERC240120           I2C,SPI,3W_SW_SPI,8080
    *                   ERC24064            I2C,SPI,3W_SW_SPI,8080
+   *    
+   *    UC1609         SLG19264            I2C,SPI,3W_SW_SPI,8080
    *    
    *    UC1610         EA_DOGXL160         I2C,SPI,3W_SW_SPI,8080
    *    
