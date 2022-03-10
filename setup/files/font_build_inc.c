@@ -76,18 +76,118 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
   if(
     strcmp(gr, "fntgrpadobex11") == 0
     ||
+    strcmp(gr, "fntgrphasankazan") == 0
+    ||
+    strcmp(gr, "fntgrpim") == 0
+    ||
     strcmp(gr, "fntgrpangel") == 0
     ||
     (strcmp(gr, "fntgrpbitfontmaker2") == 0 && (
+      strcmp(fn, "3x3basic") == 0
+      ||
+      strcmp(fn, "3x5im") == 0
+      ||
+      strcmp(fn, "8bitclassic") == 0
+      ||
       strcmp(fn, "adventurer") == 0
+      ||
+      strcmp(fn, "botmaker") == 0
+      ||
+      strcmp(fn, "bpixel") == 0
+      ||
+      strcmp(fn, "bpixeldouble") == 0
       ||
       strcmp(fn, "bracketedbabies") == 0
       ||
+      strcmp(fn, "bytesize") == 0
+      ||
+      strcmp(fn, "ciircle13") == 0
+      ||
+      strcmp(fn, "commodore64") == 0
+      ||
+      strcmp(fn, "doomalpha04") == 0
+      ||
+      strcmp(fn, "dystopia") == 0
+      ||
+      strcmp(fn, "efraneextracondensed") == 0
+      ||
+      strcmp(fn, "eckpixel") == 0
+      ||
+      strcmp(fn, "elispe") == 0
+      ||
+      strcmp(fn, "eventhrees") == 0
+      ||
+      strcmp(fn, "fivepx") == 0
+      ||
+      strcmp(fn, "fourmat") == 0
+      ||
       strcmp(fn, "frikativ") == 0
+      ||
+      strcmp(fn, "greenbloodserif2") == 0
       ||
       strcmp(fn, "heavybottom") == 0
       ||
+      strcmp(fn, "heisans") == 0
+      ||
+      strcmp(fn, "kibibyte") == 0
+      ||
+      strcmp(fn, "likeminecraft") == 0
+      ||
+      strcmp(fn, "littlemissloudonbold") == 0
+      ||
+      strcmp(fn, "medsans") == 0
+      ||
+      strcmp(fn, "mildras") == 0
+      ||
+      strcmp(fn, "minicute") == 0
+      ||
+      strcmp(fn, "minuteconsole") == 0
+      ||
+      strcmp(fn, "moosenooks") == 0
+      ||
+      strcmp(fn, "neuecraft") == 0
+      ||
+      strcmp(fn, "new3x9pixelfont") == 0
+      ||
+      strcmp(fn, "originalsans") == 0
+      ||
+      strcmp(fn, "pixzillav1") == 0
+      ||
+      strcmp(fn, "princess") == 0
+      ||
+      strcmp(fn, "scrum") == 0
+      ||
+      strcmp(fn, "simple1") == 0
+      ||
+      strcmp(fn, "sisterserif") == 0
+      ||
+      strcmp(fn, "smallsimple") == 0
+      ||
+      strcmp(fn, "smolfont") == 0
+      ||
+      strcmp(fn, "standardized3x5") == 0
+      ||
+      strcmp(fn, "sticker100complete") == 0
+      ||
+      strcmp(fn, "stylishcharm") == 0
+      ||
       strcmp(fn, "tallpix") == 0
+      ||
+      strcmp(fn, "tallpixelextended") == 0
+      ||
+      strcmp(fn, "threepix") == 0
+      ||
+      strcmp(fn, "tiny_gk") == 0
+      ||
+      strcmp(fn, "tiny_simon") == 0
+      ||
+      strcmp(fn, "tinyface") == 0
+      ||
+      strcmp(fn, "tinypixie2") == 0
+      ||
+      strcmp(fn, "tinyunicode") == 0
+      ||
+      strcmp(fn, "wedge") == 0
       )
     )
     ||
@@ -165,6 +265,8 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
     strcmp(gr, "fntgrpacademiasinica") == 0
     ||
     strcmp(gr, "fntgrpstreamline") == 0
+    ||
+    strcmp(gr, "fntgrpmysteryquest") == 0
     )
     font_licence_type = 1; /* permissive */
   else if(
@@ -208,6 +310,10 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
     font_licence_type = 2; /* GPL and compatible copyleft */
   else if(
     (strcmp(gr, "fntgrpbitfontmaker2") == 0 && (
+      strcmp(fn, "busdisplay11x5") == 0
+      ||
+      strcmp(fn, "busdisplay8x5") == 0
+      ||
       strcmp(fn, "fancypixels") == 0
       ||
       strcmp(fn, "iconquadpix") == 0
@@ -215,6 +321,10 @@ void txtconv(int i, int fm, char *fms, int bm, char *bms, int mm, char *mms)
       strcmp(fn, "lastapprenticebold") == 0
       ||
       strcmp(fn, "lastapprenticethin") == 0
+      ||
+      strcmp(fn, "pxclassic") == 0
+      ||
+      strcmp(fn, "sonicmania") == 0
       )
     )
     ||

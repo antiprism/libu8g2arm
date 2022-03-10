@@ -1,7 +1,7 @@
 lib_LTLIBRARIES = libu8g2arm.la
 libu8g2arm_la_SOURCES =
 libu8g2arm_la_LIBADD = libu8g2armport.la libu8g2armcsrc.la
-libu8g2arm_la_LDFLAGS = -release 2.32.6
+libu8g2arm_la_LDFLAGS = -release 2.32.10
 noinst_LTLIBRARIES = libu8g2armport.la libu8g2armcsrc.la
 
 libu8g2armport_la_SOURCES = \
@@ -140,6 +140,13 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_10x20_t_greek.c \
 	csrc/fonts_permissive/u8g2_font_10x20_tn.c \
 	csrc/fonts_permissive/u8g2_font_10x20_tr.c \
+	csrc/fonts_permissive/u8g2_font_12x6LED_mn.c \
+	csrc/fonts_permissive/u8g2_font_12x6LED_tf.c \
+	csrc/fonts_permissive/u8g2_font_12x6LED_tr.c \
+	csrc/fonts_permissive/u8g2_font_3x3basic_tr.c \
+	csrc/fonts_permissive/u8g2_font_3x5im_mr.c \
+	csrc/fonts_permissive/u8g2_font_3x5im_te.c \
+	csrc/fonts_permissive/u8g2_font_3x5im_tr.c \
 	csrc/fonts_permissive/u8g2_font_4x6_mf.c \
 	csrc/fonts_permissive/u8g2_font_4x6_mn.c \
 	csrc/fonts_permissive/u8g2_font_4x6_mr.c \
@@ -202,6 +209,8 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_6x13_t_hebrew.c \
 	csrc/fonts_permissive/u8g2_font_6x13_tn.c \
 	csrc/fonts_permissive/u8g2_font_6x13_tr.c \
+	csrc/fonts_permissive/u8g2_font_7_Seg_33x19_mn.c \
+	csrc/fonts_permissive/u8g2_font_7_Seg_41x21_mn.c \
 	csrc/fonts_permissive/u8g2_font_7Segments_26x42_mn.c \
 	csrc/fonts_permissive/u8g2_font_7x13B_mf.c \
 	csrc/fonts_permissive/u8g2_font_7x13B_mn.c \
@@ -238,6 +247,9 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_7x14_tf.c \
 	csrc/fonts_permissive/u8g2_font_7x14_tn.c \
 	csrc/fonts_permissive/u8g2_font_7x14_tr.c \
+	csrc/fonts_permissive/u8g2_font_8bitclassic_te.c \
+	csrc/fonts_permissive/u8g2_font_8bitclassic_tf.c \
+	csrc/fonts_permissive/u8g2_font_8bitclassic_tr.c \
 	csrc/fonts_permissive/u8g2_font_8x13B_mf.c \
 	csrc/fonts_permissive/u8g2_font_8x13B_mn.c \
 	csrc/fonts_permissive/u8g2_font_8x13B_mr.c \
@@ -290,6 +302,10 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_9x18_tf.c \
 	csrc/fonts_permissive/u8g2_font_9x18_tn.c \
 	csrc/fonts_permissive/u8g2_font_9x18_tr.c \
+	csrc/fonts_permissive/u8g2_font_9x6LED_mn.c \
+	csrc/fonts_permissive/u8g2_font_9x6LED_tf.c \
+	csrc/fonts_permissive/u8g2_font_9x6LED_tr.c \
+	csrc/fonts_permissive/u8g2_font_abel_mr.c \
 	csrc/fonts_permissive/u8g2_font_adventurer_t_all.c \
 	csrc/fonts_permissive/u8g2_font_adventurer_tf.c \
 	csrc/fonts_permissive/u8g2_font_adventurer_tr.c \
@@ -342,11 +358,22 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_Born2bSportyV2_te.c \
 	csrc/fonts_permissive/u8g2_font_Born2bSportyV2_tf.c \
 	csrc/fonts_permissive/u8g2_font_Born2bSportyV2_tr.c \
+	csrc/fonts_permissive/u8g2_font_botmaker_te.c \
+	csrc/fonts_permissive/u8g2_font_bpixeldouble_tr.c \
+	csrc/fonts_permissive/u8g2_font_bpixel_te.c \
+	csrc/fonts_permissive/u8g2_font_bpixel_tr.c \
 	csrc/fonts_permissive/u8g2_font_bracketedbabies_tr.c \
+	csrc/fonts_permissive/u8g2_font_bytesize_te.c \
+	csrc/fonts_permissive/u8g2_font_bytesize_tf.c \
+	csrc/fonts_permissive/u8g2_font_bytesize_tr.c \
+	csrc/fonts_permissive/u8g2_font_calblk36_tr.c \
+	csrc/fonts_permissive/u8g2_font_callite24_tr.c \
 	csrc/fonts_permissive/u8g2_font_celibatemonk_tr.c \
 	csrc/fonts_permissive/u8g2_font_chroma48medium8_8n.c \
 	csrc/fonts_permissive/u8g2_font_chroma48medium8_8r.c \
 	csrc/fonts_permissive/u8g2_font_chroma48medium8_8u.c \
+	csrc/fonts_permissive/u8g2_font_ciircle13_tr.c \
+	csrc/fonts_permissive/u8g2_font_commodore64_tr.c \
 	csrc/fonts_permissive/u8g2_font_courB08_tf.c \
 	csrc/fonts_permissive/u8g2_font_courB08_tn.c \
 	csrc/fonts_permissive/u8g2_font_courB08_tr.c \
@@ -518,12 +545,20 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_DigitalDisco_tu.c \
 	csrc/fonts_permissive/u8g2_font_diodesemimono_tr.c \
 	csrc/fonts_permissive/u8g2_font_disrespectfulteenager_tu.c \
+	csrc/fonts_permissive/u8g2_font_doomalpha04_te.c \
+	csrc/fonts_permissive/u8g2_font_doomalpha04_tr.c \
+	csrc/fonts_permissive/u8g2_font_dystopia_te.c \
+	csrc/fonts_permissive/u8g2_font_dystopia_tr.c \
+	csrc/fonts_permissive/u8g2_font_eckpixel_tr.c \
+	csrc/fonts_permissive/u8g2_font_efraneextracondensed_te.c \
+	csrc/fonts_permissive/u8g2_font_elispe_tr.c \
 	csrc/fonts_permissive/u8g2_font_emoticons21_tr.c \
 	csrc/fonts_permissive/u8g2_font_Engrish_tf.c \
 	csrc/fonts_permissive/u8g2_font_Engrish_tr.c \
 	csrc/fonts_permissive/u8g2_font_etl14thai_t.c \
 	csrc/fonts_permissive/u8g2_font_etl16thai_t.c \
 	csrc/fonts_permissive/u8g2_font_etl24thai_t.c \
+	csrc/fonts_permissive/u8g2_font_eventhrees_tr.c \
 	csrc/fonts_permissive/u8g2_font_f10_b_t_japanese1.c \
 	csrc/fonts_permissive/u8g2_font_f10_b_t_japanese2.c \
 	csrc/fonts_permissive/u8g2_font_f10_t_japanese1.c \
@@ -542,10 +577,15 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_finderskeepers_tf.c \
 	csrc/fonts_permissive/u8g2_font_finderskeepers_tn.c \
 	csrc/fonts_permissive/u8g2_font_finderskeepers_tr.c \
+	csrc/fonts_permissive/u8g2_font_fivepx_tr.c \
+	csrc/fonts_permissive/u8g2_font_fourmat_te.c \
+	csrc/fonts_permissive/u8g2_font_fourmat_tf.c \
+	csrc/fonts_permissive/u8g2_font_fourmat_tr.c \
 	csrc/fonts_permissive/u8g2_font_freedoomr10_mu.c \
 	csrc/fonts_permissive/u8g2_font_freedoomr10_tu.c \
 	csrc/fonts_permissive/u8g2_font_freedoomr25_mn.c \
 	csrc/fonts_permissive/u8g2_font_freedoomr25_tn.c \
+	csrc/fonts_permissive/u8g2_font_frigidaire_mr.c \
 	csrc/fonts_permissive/u8g2_font_frikativ_t_all.c \
 	csrc/fonts_permissive/u8g2_font_frikativ_tf.c \
 	csrc/fonts_permissive/u8g2_font_frikativ_tr.c \
@@ -621,6 +661,8 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_ganj_nameh_sans12_t_all.c \
 	csrc/fonts_permissive/u8g2_font_ganj_nameh_sans14_t_all.c \
 	csrc/fonts_permissive/u8g2_font_ganj_nameh_sans16_t_all.c \
+	csrc/fonts_permissive/u8g2_font_garbagecan_tf.c \
+	csrc/fonts_permissive/u8g2_font_garbagecan_tr.c \
 	csrc/fonts_permissive/u8g2_font_gb16st_t_1.c \
 	csrc/fonts_permissive/u8g2_font_gb16st_t_2.c \
 	csrc/fonts_permissive/u8g2_font_gb16st_t_3.c \
@@ -630,6 +672,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_Georgia7px_te.c \
 	csrc/fonts_permissive/u8g2_font_Georgia7px_tf.c \
 	csrc/fonts_permissive/u8g2_font_Georgia7px_tr.c \
+	csrc/fonts_permissive/u8g2_font_greenbloodserif2_tr.c \
 	csrc/fonts_permissive/u8g2_font_habsburgchancery_t_all.c \
 	csrc/fonts_permissive/u8g2_font_habsburgchancery_tf.c \
 	csrc/fonts_permissive/u8g2_font_habsburgchancery_tn.c \
@@ -638,6 +681,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_halftone_tn.c \
 	csrc/fonts_permissive/u8g2_font_halftone_tr.c \
 	csrc/fonts_permissive/u8g2_font_heavybottom_tr.c \
+	csrc/fonts_permissive/u8g2_font_heisans_tr.c \
 	csrc/fonts_permissive/u8g2_font_helvB08_te.c \
 	csrc/fonts_permissive/u8g2_font_helvB08_tf.c \
 	csrc/fonts_permissive/u8g2_font_helvB08_tn.c \
@@ -784,12 +828,17 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_iranian_sans_16_t_all.c \
 	csrc/fonts_permissive/u8g2_font_iranian_sans_8_t_all.c \
 	csrc/fonts_permissive/u8g2_font_jinxedwizards_tr.c \
+	csrc/fonts_permissive/u8g2_font_kibibyte_te.c \
+	csrc/fonts_permissive/u8g2_font_kibibyte_tr.c \
 	csrc/fonts_permissive/u8g2_font_koleeko_tf.c \
 	csrc/fonts_permissive/u8g2_font_koleeko_tn.c \
 	csrc/fonts_permissive/u8g2_font_koleeko_tr.c \
 	csrc/fonts_permissive/u8g2_font_koleeko_tu.c \
 	csrc/fonts_permissive/u8g2_font_lastpriestess_tr.c \
 	csrc/fonts_permissive/u8g2_font_lastpriestess_tu.c \
+	csrc/fonts_permissive/u8g2_font_likeminecraft_te.c \
+	csrc/fonts_permissive/u8g2_font_littlemissloudonbold_te.c \
+	csrc/fonts_permissive/u8g2_font_littlemissloudonbold_tr.c \
 	csrc/fonts_permissive/u8g2_font_logisoso16_tf.c \
 	csrc/fonts_permissive/u8g2_font_logisoso16_tn.c \
 	csrc/fonts_permissive/u8g2_font_logisoso16_tr.c \
@@ -841,6 +890,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_logisoso62_tn.c \
 	csrc/fonts_permissive/u8g2_font_logisoso78_tn.c \
 	csrc/fonts_permissive/u8g2_font_logisoso92_tn.c \
+	csrc/fonts_permissive/u8g2_font_lord_mr.c \
 	csrc/fonts_permissive/u8g2_font_lubB08_te.c \
 	csrc/fonts_permissive/u8g2_font_lubB08_tf.c \
 	csrc/fonts_permissive/u8g2_font_lubB08_tn.c \
@@ -1074,15 +1124,35 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_mademoiselle_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_mademoiselle_mel_tr.c \
 	csrc/fonts_permissive/u8g2_font_m_c_kids_nes_credits_font_tr.c \
+	csrc/fonts_permissive/u8g2_font_medsans_tr.c \
 	csrc/fonts_permissive/u8g2_font_michaelmouse_tu.c \
 	csrc/fonts_permissive/u8g2_font_micro_mn.c \
 	csrc/fonts_permissive/u8g2_font_micro_mr.c \
 	csrc/fonts_permissive/u8g2_font_micro_tn.c \
 	csrc/fonts_permissive/u8g2_font_micro_tr.c \
+	csrc/fonts_permissive/u8g2_font_mildras_te.c \
+	csrc/fonts_permissive/u8g2_font_mildras_tr.c \
+	csrc/fonts_permissive/u8g2_font_minicute_te.c \
+	csrc/fonts_permissive/u8g2_font_minicute_tr.c \
+	csrc/fonts_permissive/u8g2_font_minuteconsole_mr.c \
+	csrc/fonts_permissive/u8g2_font_minuteconsole_tr.c \
 	csrc/fonts_permissive/u8g2_font_missingplanet_t_all.c \
 	csrc/fonts_permissive/u8g2_font_missingplanet_tf.c \
 	csrc/fonts_permissive/u8g2_font_missingplanet_tn.c \
 	csrc/fonts_permissive/u8g2_font_missingplanet_tr.c \
+	csrc/fonts_permissive/u8g2_font_moosenooks_tr.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_24_tf.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_24_tn.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_24_tr.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_28_tf.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_28_tn.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_28_tr.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_32_tn.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_32_tr.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_36_tn.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_42_tn.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_48_tn.c \
+	csrc/fonts_permissive/u8g2_font_mystery_quest_56_tn.c \
 	csrc/fonts_permissive/u8g2_font_ncenB08_te.c \
 	csrc/fonts_permissive/u8g2_font_ncenB08_tf.c \
 	csrc/fonts_permissive/u8g2_font_ncenB08_tn.c \
@@ -1134,10 +1204,24 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_nerhoe_tf.c \
 	csrc/fonts_permissive/u8g2_font_nerhoe_tn.c \
 	csrc/fonts_permissive/u8g2_font_nerhoe_tr.c \
+	csrc/fonts_permissive/u8g2_font_neuecraft_te.c \
+	csrc/fonts_permissive/u8g2_font_neuecraft_tr.c \
+	csrc/fonts_permissive/u8g2_font_new3x9pixelfont_te.c \
+	csrc/fonts_permissive/u8g2_font_new3x9pixelfont_tf.c \
+	csrc/fonts_permissive/u8g2_font_new3x9pixelfont_tr.c \
 	csrc/fonts_permissive/u8g2_font_nokiafc22_tf.c \
 	csrc/fonts_permissive/u8g2_font_nokiafc22_tn.c \
 	csrc/fonts_permissive/u8g2_font_nokiafc22_tr.c \
 	csrc/fonts_permissive/u8g2_font_nokiafc22_tu.c \
+	csrc/fonts_permissive/u8g2_font_NokiaLargeBold_te.c \
+	csrc/fonts_permissive/u8g2_font_NokiaLargeBold_tf.c \
+	csrc/fonts_permissive/u8g2_font_NokiaLargeBold_tr.c \
+	csrc/fonts_permissive/u8g2_font_NokiaSmallBold_te.c \
+	csrc/fonts_permissive/u8g2_font_NokiaSmallBold_tf.c \
+	csrc/fonts_permissive/u8g2_font_NokiaSmallBold_tr.c \
+	csrc/fonts_permissive/u8g2_font_NokiaSmallPlain_te.c \
+	csrc/fonts_permissive/u8g2_font_NokiaSmallPlain_tf.c \
+	csrc/fonts_permissive/u8g2_font_NokiaSmallPlain_tr.c \
 	csrc/fonts_permissive/u8g2_font_oldwizard_tf.c \
 	csrc/fonts_permissive/u8g2_font_oldwizard_tn.c \
 	csrc/fonts_permissive/u8g2_font_oldwizard_tr.c \
@@ -1221,6 +1305,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_ordinarybasis_tf.c \
 	csrc/fonts_permissive/u8g2_font_ordinarybasis_tn.c \
 	csrc/fonts_permissive/u8g2_font_ordinarybasis_tr.c \
+	csrc/fonts_permissive/u8g2_font_originalsans_tr.c \
 	csrc/fonts_permissive/u8g2_font_osb18_tf.c \
 	csrc/fonts_permissive/u8g2_font_osb18_tn.c \
 	csrc/fonts_permissive/u8g2_font_osb18_tr.c \
@@ -1268,6 +1353,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_pcsenior_8r.c \
 	csrc/fonts_permissive/u8g2_font_pcsenior_8u.c \
 	csrc/fonts_permissive/u8g2_font_pearfont_tr.c \
+	csrc/fonts_permissive/u8g2_font_percent_circle_25_hn.c \
 	csrc/fonts_permissive/u8g2_font_pieceofcake_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_pieceofcake_mel_tr.c \
 	csrc/fonts_permissive/u8g2_font_Pixellari_te.c \
@@ -1280,12 +1366,19 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_pixelmordred_tn.c \
 	csrc/fonts_permissive/u8g2_font_pixelmordred_tr.c \
 	csrc/fonts_permissive/u8g2_font_pixelpoiiz_tr.c \
+	csrc/fonts_permissive/u8g2_font_PixelTheatre_te.c \
+	csrc/fonts_permissive/u8g2_font_PixelTheatre_tr.c \
+	csrc/fonts_permissive/u8g2_font_pixzillav1_te.c \
+	csrc/fonts_permissive/u8g2_font_pixzillav1_tf.c \
+	csrc/fonts_permissive/u8g2_font_pixzillav1_tr.c \
 	csrc/fonts_permissive/u8g2_font_press_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_press_mel_tr.c \
 	csrc/fonts_permissive/u8g2_font_pressstart2p_8f.c \
 	csrc/fonts_permissive/u8g2_font_pressstart2p_8n.c \
 	csrc/fonts_permissive/u8g2_font_pressstart2p_8r.c \
 	csrc/fonts_permissive/u8g2_font_pressstart2p_8u.c \
+	csrc/fonts_permissive/u8g2_font_princess_te.c \
+	csrc/fonts_permissive/u8g2_font_princess_tr.c \
 	csrc/fonts_permissive/u8g2_font_profont10_mf.c \
 	csrc/fonts_permissive/u8g2_font_profont10_mn.c \
 	csrc/fonts_permissive/u8g2_font_profont10_mr.c \
@@ -1331,6 +1424,8 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_questgiver_tr.c \
 	csrc/fonts_permissive/u8g2_font_repress_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_repress_mel_tr.c \
+	csrc/fonts_permissive/u8g2_font_resoledbold_tr.c \
+	csrc/fonts_permissive/u8g2_font_resoledmedium_tr.c \
 	csrc/fonts_permissive/u8g2_font_saikyosansbold8_8n.c \
 	csrc/fonts_permissive/u8g2_font_saikyosansbold8_8u.c \
 	csrc/fonts_permissive/u8g2_font_samim_10_t_all.c \
@@ -1344,15 +1439,27 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_sandyforest_tn.c \
 	csrc/fonts_permissive/u8g2_font_sandyforest_tr.c \
 	csrc/fonts_permissive/u8g2_font_sandyforest_tu.c \
+	csrc/fonts_permissive/u8g2_font_scrum_te.c \
+	csrc/fonts_permissive/u8g2_font_scrum_tf.c \
+	csrc/fonts_permissive/u8g2_font_scrum_tr.c \
 	csrc/fonts_permissive/u8g2_font_secretaryhand_t_all.c \
 	csrc/fonts_permissive/u8g2_font_secretaryhand_tf.c \
 	csrc/fonts_permissive/u8g2_font_secretaryhand_tn.c \
 	csrc/fonts_permissive/u8g2_font_secretaryhand_tr.c \
 	csrc/fonts_permissive/u8g2_font_seraphimb1_tr.c \
+	csrc/fonts_permissive/u8g2_font_simple1_te.c \
+	csrc/fonts_permissive/u8g2_font_simple1_tf.c \
+	csrc/fonts_permissive/u8g2_font_simple1_tr.c \
 	csrc/fonts_permissive/u8g2_font_sirclivethebold_tn.c \
 	csrc/fonts_permissive/u8g2_font_sirclivethebold_tr.c \
 	csrc/fonts_permissive/u8g2_font_sirclive_tn.c \
 	csrc/fonts_permissive/u8g2_font_sirclive_tr.c \
+	csrc/fonts_permissive/u8g2_font_sisterserif_tr.c \
+	csrc/fonts_permissive/u8g2_font_smallsimple_te.c \
+	csrc/fonts_permissive/u8g2_font_smallsimple_tr.c \
+	csrc/fonts_permissive/u8g2_font_smolfont_te.c \
+	csrc/fonts_permissive/u8g2_font_smolfont_tf.c \
+	csrc/fonts_permissive/u8g2_font_smolfont_tr.c \
 	csrc/fonts_permissive/u8g2_font_squeezed_b6_tn.c \
 	csrc/fonts_permissive/u8g2_font_squeezed_b6_tr.c \
 	csrc/fonts_permissive/u8g2_font_squeezed_b7_tn.c \
@@ -1364,6 +1471,9 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_squirrel_tn.c \
 	csrc/fonts_permissive/u8g2_font_squirrel_tr.c \
 	csrc/fonts_permissive/u8g2_font_squirrel_tu.c \
+	csrc/fonts_permissive/u8g2_font_standardized3x5_tr.c \
+	csrc/fonts_permissive/u8g2_font_sticker100complete_te.c \
+	csrc/fonts_permissive/u8g2_font_sticker100complete_tr.c \
 	csrc/fonts_permissive/u8g2_font_sticker_mel_tn.c \
 	csrc/fonts_permissive/u8g2_font_sticker_mel_tr.c \
 	csrc/fonts_permissive/u8g2_font_streamline_all_t.c \
@@ -1426,6 +1536,8 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_streamline_users_t.c \
 	csrc/fonts_permissive/u8g2_font_streamline_video_movies_t.c \
 	csrc/fonts_permissive/u8g2_font_streamline_weather_t.c \
+	csrc/fonts_permissive/u8g2_font_stylishcharm_te.c \
+	csrc/fonts_permissive/u8g2_font_stylishcharm_tr.c \
 	csrc/fonts_permissive/u8g2_font_t0_11b_me.c \
 	csrc/fonts_permissive/u8g2_font_t0_11b_mf.c \
 	csrc/fonts_permissive/u8g2_font_t0_11b_mn.c \
@@ -1571,6 +1683,9 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_t0_22_tf.c \
 	csrc/fonts_permissive/u8g2_font_t0_22_tn.c \
 	csrc/fonts_permissive/u8g2_font_t0_22_tr.c \
+	csrc/fonts_permissive/u8g2_font_tallpixelextended_te.c \
+	csrc/fonts_permissive/u8g2_font_tallpixelextended_tf.c \
+	csrc/fonts_permissive/u8g2_font_tallpixelextended_tr.c \
 	csrc/fonts_permissive/u8g2_font_tallpix_tr.c \
 	csrc/fonts_permissive/u8g2_font_tenfatguys_t_all.c \
 	csrc/fonts_permissive/u8g2_font_tenfatguys_tf.c \
@@ -1591,6 +1706,9 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_tenthinnerguys_tn.c \
 	csrc/fonts_permissive/u8g2_font_tenthinnerguys_tr.c \
 	csrc/fonts_permissive/u8g2_font_tenthinnerguys_tu.c \
+	csrc/fonts_permissive/u8g2_font_Terminal_te.c \
+	csrc/fonts_permissive/u8g2_font_Terminal_tr.c \
+	csrc/fonts_permissive/u8g2_font_threepix_tr.c \
 	csrc/fonts_permissive/u8g2_font_timB08_tf.c \
 	csrc/fonts_permissive/u8g2_font_timB08_tn.c \
 	csrc/fonts_permissive/u8g2_font_timB08_tr.c \
@@ -1628,9 +1746,18 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_timR24_tf.c \
 	csrc/fonts_permissive/u8g2_font_timR24_tn.c \
 	csrc/fonts_permissive/u8g2_font_timR24_tr.c \
+	csrc/fonts_permissive/u8g2_font_tinyface_te.c \
+	csrc/fonts_permissive/u8g2_font_tinyface_tr.c \
+	csrc/fonts_permissive/u8g2_font_tiny_gk_tr.c \
+	csrc/fonts_permissive/u8g2_font_tinypixie2_tr.c \
+	csrc/fonts_permissive/u8g2_font_tiny_simon_mr.c \
+	csrc/fonts_permissive/u8g2_font_tiny_simon_tr.c \
 	csrc/fonts_permissive/u8g2_font_tinytim_tf.c \
 	csrc/fonts_permissive/u8g2_font_tinytim_tn.c \
 	csrc/fonts_permissive/u8g2_font_tinytim_tr.c \
+	csrc/fonts_permissive/u8g2_font_tinyunicode_te.c \
+	csrc/fonts_permissive/u8g2_font_tinyunicode_tf.c \
+	csrc/fonts_permissive/u8g2_font_tinyunicode_tr.c \
 	csrc/fonts_permissive/u8g2_font_tom_thumb_4x6_me.c \
 	csrc/fonts_permissive/u8g2_font_tom_thumb_4x6_mf.c \
 	csrc/fonts_permissive/u8g2_font_tom_thumb_4x6_mn.c \
@@ -1651,6 +1778,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_u8glib_4_hr.c \
 	csrc/fonts_permissive/u8g2_font_u8glib_4_tf.c \
 	csrc/fonts_permissive/u8g2_font_u8glib_4_tr.c \
+	csrc/fonts_permissive/u8g2_font_UnnamedDOSFontIV_tr.c \
 	csrc/fonts_permissive/u8g2_font_Untitled16PixelSansSerifBitmap_tr.c \
 	csrc/fonts_permissive/u8g2_font_VCR_OSD_mf.c \
 	csrc/fonts_permissive/u8g2_font_VCR_OSD_mn.c \
@@ -1666,6 +1794,7 @@ libu8g2armcsrc_la_SOURCES = \
 	csrc/fonts_permissive/u8g2_font_victoriamedium8_8n.c \
 	csrc/fonts_permissive/u8g2_font_victoriamedium8_8r.c \
 	csrc/fonts_permissive/u8g2_font_victoriamedium8_8u.c \
+	csrc/fonts_permissive/u8g2_font_wedge_tr.c \
 	csrc/fonts_permissive/u8g2_font_Wizzard_tr.c \
 	csrc/fonts_permissive/u8x8_font_5x7_f.c \
 	csrc/fonts_permissive/u8x8_font_5x7_n.c \
@@ -1784,7 +1913,7 @@ libu8g2armcsrc_la_SOURCES = \
 	# terminate list
 
 lib_LTLIBRARIES += libu8g2fonts_gplcopyleft.la
-libu8g2fonts_gplcopyleft_la_LDFLAGS = -release 2.32.6
+libu8g2fonts_gplcopyleft_la_LDFLAGS = -release 2.32.10
 libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_astragal_nbp_tf.c \
 	csrc/fonts_gplcopyleft/u8g2_font_astragal_nbp_tn.c \
@@ -1979,6 +2108,7 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	csrc/fonts_gplcopyleft/u8g2_font_utopia24_tf.c \
 	csrc/fonts_gplcopyleft/u8g2_font_utopia24_tn.c \
 	csrc/fonts_gplcopyleft/u8g2_font_utopia24_tr.c \
+	csrc/fonts_gplcopyleft/u8g2_font_waffle_t_all.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese1.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese2.c \
 	csrc/fonts_gplcopyleft/u8g2_font_wqy12_t_chinese3.c \
@@ -2030,12 +2160,17 @@ libu8g2fonts_gplcopyleft_la_SOURCES = \
 	# terminate list
 
 lib_LTLIBRARIES += libu8g2fonts_noncommercial.la
-libu8g2fonts_noncommercial_la_LDFLAGS = -release 2.32.6
+libu8g2fonts_noncommercial_la_LDFLAGS = -release 2.32.10
 libu8g2fonts_noncommercial_la_SOURCES = \
+	csrc/fonts_noncommercial/u8g2_font_busdisplay11x5_te.c \
+	csrc/fonts_noncommercial/u8g2_font_busdisplay11x5_tr.c \
+	csrc/fonts_noncommercial/u8g2_font_busdisplay8x5_tr.c \
 	csrc/fonts_noncommercial/u8g2_font_fancypixels_tf.c \
 	csrc/fonts_noncommercial/u8g2_font_fancypixels_tr.c \
 	csrc/fonts_noncommercial/u8g2_font_iconquadpix_m_all.c \
+	csrc/fonts_noncommercial/u8g2_font_lastapprenticebold_te.c \
 	csrc/fonts_noncommercial/u8g2_font_lastapprenticebold_tr.c \
+	csrc/fonts_noncommercial/u8g2_font_lastapprenticethin_te.c \
 	csrc/fonts_noncommercial/u8g2_font_lastapprenticethin_tr.c \
 	csrc/fonts_noncommercial/u8g2_font_lucasarts_scumm_subtitle_o_tf.c \
 	csrc/fonts_noncommercial/u8g2_font_lucasarts_scumm_subtitle_o_tn.c \
@@ -2043,6 +2178,11 @@ libu8g2fonts_noncommercial_la_SOURCES = \
 	csrc/fonts_noncommercial/u8g2_font_lucasarts_scumm_subtitle_r_tf.c \
 	csrc/fonts_noncommercial/u8g2_font_lucasarts_scumm_subtitle_r_tn.c \
 	csrc/fonts_noncommercial/u8g2_font_lucasarts_scumm_subtitle_r_tr.c \
+	csrc/fonts_noncommercial/u8g2_font_pxclassic_te.c \
+	csrc/fonts_noncommercial/u8g2_font_pxclassic_tf.c \
+	csrc/fonts_noncommercial/u8g2_font_pxclassic_tr.c \
+	csrc/fonts_noncommercial/u8g2_font_sonicmania_te.c \
+	csrc/fonts_noncommercial/u8g2_font_sonicmania_tr.c \
 	csrc/fonts_noncommercial/u8x8_font_lucasarts_scumm_subtitle_o_2x2_f.c \
 	csrc/fonts_noncommercial/u8x8_font_lucasarts_scumm_subtitle_o_2x2_n.c \
 	csrc/fonts_noncommercial/u8x8_font_lucasarts_scumm_subtitle_o_2x2_r.c \

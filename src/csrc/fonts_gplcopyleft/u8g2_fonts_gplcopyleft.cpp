@@ -5,6 +5,7 @@
 
 const font_lookup u8g2_fonts_gplcopyleft[] = {
   { "u8g2_font_siji_t_6x10", "siji", "fntgrpsiji", u8g2_font_siji_t_6x10},
+  { "u8g2_font_waffle_t_all", "waffle", "fntgrpsiji", u8g2_font_waffle_t_all},
   { "u8g2_font_mozart_nbp_tf", "mozart_nbp", "fntgrpnbp", u8g2_font_mozart_nbp_tf},
   { "u8g2_font_mozart_nbp_tr", "mozart_nbp", "fntgrpnbp", u8g2_font_mozart_nbp_tr},
   { "u8g2_font_mozart_nbp_tn", "mozart_nbp", "fntgrpnbp", u8g2_font_mozart_nbp_tn},

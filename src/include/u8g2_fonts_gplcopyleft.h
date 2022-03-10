@@ -4,6 +4,7 @@
 #include "u8x8_fonts_gplcopyleft.h"
 
 extern const uint8_t u8g2_font_siji_t_6x10[] U8G2_FONT_SECTION("u8g2_font_siji_t_6x10");
+extern const uint8_t u8g2_font_waffle_t_all[] U8G2_FONT_SECTION("u8g2_font_waffle_t_all");
 extern const uint8_t u8g2_font_mozart_nbp_tf[] U8G2_FONT_SECTION("u8g2_font_mozart_nbp_tf");
 extern const uint8_t u8g2_font_mozart_nbp_tr[] U8G2_FONT_SECTION("u8g2_font_mozart_nbp_tr");
 extern const uint8_t u8g2_font_mozart_nbp_tn[] U8G2_FONT_SECTION("u8g2_font_mozart_nbp_tn");

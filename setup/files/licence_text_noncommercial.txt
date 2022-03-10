@@ -1,6 +1,17 @@
 ##########################################################################
 Files: src/csrc/fonts_noncommercial/*
 
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: busdisplay11x5
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+BusDisplay11x5 by BusDisplayMaker license : (Creative Commons NonCommercial) https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=3789
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: busdisplay8x5
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+BusDisplay11x5 by BusDisplayMaker license : (Creative Commons NonCommercial) https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=3789
+-----------------------------------------------------------------------------
 fntgrpbitfontmaker2: fancypixels
 https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
 
@@ -20,6 +31,16 @@ fntgrpbitfontmaker2: lastapprenticethin
 https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
 
 LastApprenticeThin by AlexanderZaytsev http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=1324 license : (Creative Commons NonCommercial)
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: pxclassic
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+PxClassic by MH license : (Creative Commons NonCommercial) https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=3715
+-----------------------------------------------------------------------------
+fntgrpbitfontmaker2: sonicmania
+https://github.com/olikraus/u8g2/wiki/fntgrpbitfontmaker2#copyright
+
+SonicMania by FabulousNinji license : (Creative Commons NonCommercial) https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=4905
 -----------------------------------------------------------------------------
 fntgrpfontstruct: lucasarts_scumm_subtitle
 https://github.com/olikraus/u8g2/wiki/fntgrpfontstruct

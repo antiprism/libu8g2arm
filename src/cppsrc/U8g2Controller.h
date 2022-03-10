@@ -270,10 +270,11 @@ public:
    *                   NHD_C12864          SPI,3W_SW_SPI,8080
    *                   ZOLEN_128X64        SPI,3W_SW_SPI,8080
    *    
-   *    ST7567         64X32               I2C,SPI,8080
+   *    ST7567         122X32              SPI,8080
+   *                   64X32               SPI,8080
    *                   ENH_DG128064        SPI,8080
    *                   ENH_DG128064I       SPI,8080
-   *                   HEM6432             I2C,SPI,8080
+   *                   HEM6432             SPI,8080
    *                   JLX12864            SPI,8080
    *                   OS12864             SPI,8080
    *                   PI_132X64           SPI,8080
