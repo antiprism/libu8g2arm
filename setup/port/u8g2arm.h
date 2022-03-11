@@ -41,7 +41,8 @@ extern "C" {
 // the display has finished
 
 // Initialize hardware SPI driver
-int u8g2arm_arm_init_hw_spi(u8x8_t *u8x8, int bus_number, int cs_number);
+int u8g2arm_arm_init_hw_spi(u8x8_t *u8x8, int bus_number, int cs_number,
+    int speed_mhz);
 
 // Initialize hardware I2C driver
 int u8g2arm_arm_init_hw_i2c(u8x8_t *u8x8, int bus_number);

@@ -55,6 +55,7 @@ static const ControllerSetup::ValueDetails value_details[CS::VAL_LAST]{
     {"i2c_address", "I2C address (hex 01-fe)"},
     {"bus_number", "bus number"},
     {"cs_number", "CS number"},
+    {"spi_mhz", "SPI speed (MHz)"},
 };
 
 map<string, int> value_name_to_id = {
@@ -76,6 +77,7 @@ map<string, int> value_name_to_id = {
     {"i2c_address", CS::VAL_I2C_ADDRESS},
     {"bus_number", CS::VAL_BUS_NUMBER},
     {"cs_number", CS::VAL_CS_NUMBER},
+    {"spi_mhz", CS::VAL_SPI_MHZ},
 };
 
 int ControllerSetup::get_value_id(const string &value_name)
@@ -108,7 +110,7 @@ static const ControllerSetup::ComDetails com_details[CS::COM_LAST] = {
         "4 wire hardware SPI", // desc
         {CS::VAL_DC},          // required
         {CS::VAL_BUS_NUMBER, CS::VAL_CS_NUMBER, CS::VAL_RESET,
-         CS::VAL_ROTATION} // optional
+         CS::VAL_ROTATION, CS::VAL_SPI_MHZ} // optional
     },
     {
         "3W_SW_SPI",                               // name
@@ -173,6 +175,8 @@ bool ControllerSetup::set_value(int val_type, uint8_t val, string &errmsg)
   else if (val_type == VAL_ROTATION && val > 3)
     errmsg = "invalid value (must be 0, 1, 2 or 3)";
   else if (val_type == VAL_I2C_ADDRESS && val == 0)
+    errmsg = "invalid value (cannot be 0)";
+  else if (val_type == VAL_SPI_MHZ && val == 0)
     errmsg = "invalid value (cannot be 0)";
   else
     values[val_type] = val;
@@ -308,7 +312,9 @@ bool ControllerSetup::init(U8G2 *u8g2, string &errmsg)
         (values[VAL_BUS_NUMBER] == U8X8_PIN_NONE) ? 0 : values[VAL_BUS_NUMBER];
     uint8_t cs_num =
         (values[VAL_CS_NUMBER] == U8X8_PIN_NONE) ? 0 : values[VAL_CS_NUMBER];
-    u8g2arm_arm_init_hw_spi(u8g2->getU8x8(), bus_num, cs_num);
+    uint8_t spi_mhz =
+        (values[VAL_CS_NUMBER] == U8X8_PIN_NONE) ? 0 : values[VAL_SPI_MHZ];
+    u8g2arm_arm_init_hw_spi(u8g2->getU8x8(), bus_num, cs_num, spi_mhz);
   }
   else if (com_type == "3W_SW_SPI") {
     setup_func(u8g2->getU8g2(), rot_funcs[rotation],

@@ -33,6 +33,7 @@ typedef struct u8g2arm_setup_t {
   int dev_fd;           // SPI/I2C  - file descriptor (set when opened)
   uint8_t bus_number;   // SPI/I2C  - bus number
   uint8_t cs_number;    // SPI only - chip select number
+  uint32_t spi_hz;      // SPI only - speed in Hz
 } u8g2arm_setup_t;
 
 static u8g2arm_setup_t *get_setup_ptr(u8x8_t *u8x8)
@@ -40,13 +41,15 @@ static u8g2arm_setup_t *get_setup_ptr(u8x8_t *u8x8)
    return u8x8_GetUserPtr(u8x8);
 }
 
-int u8g2arm_arm_init_hw_spi(u8x8_t *u8x8, int bus_number, int cs_number)
+int u8g2arm_arm_init_hw_spi(u8x8_t *u8x8, int bus_number, int cs_number,
+    int spi_mhz)
 {
   u8g2arm_setup_t *p_setup = (u8g2arm_setup_t *)malloc(sizeof(u8g2arm_setup_t));
   u8x8_SetUserPtr(u8x8, p_setup);
   if(p_setup) {
     p_setup->bus_number = bus_number;
     p_setup->cs_number = cs_number;
+    p_setup->spi_hz = (spi_mhz ? spi_mhz : 1) * 1000000; // default to 1 MHz
     p_setup->dev_fd = -1;  // invalid file descriptor
   }
   return p_setup != NULL;
@@ -54,7 +57,7 @@ int u8g2arm_arm_init_hw_spi(u8x8_t *u8x8, int bus_number, int cs_number)
 
 int u8g2arm_arm_init_hw_i2c(u8x8_t *u8x8, int bus_number)
 {
-  return u8g2arm_arm_init_hw_spi(u8x8, bus_number, -1);
+  return u8g2arm_arm_init_hw_spi(u8x8, bus_number, -1, 0);
 }
 
 uint8_t u8x8_arm_linux_gpio_and_delay(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
@@ -350,7 +353,7 @@ uint8_t u8x8_byte_arm_linux_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, v
                     .rx_buf = (unsigned long)rx,
                     .len = 1,
                     .delay_usecs = 0,
-                    .speed_hz = 500000,
+                    .speed_hz = p_setup->spi_hz,
                     .bits_per_word = 8,
                 };
 
@@ -383,7 +386,7 @@ uint8_t u8x8_byte_arm_linux_hw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, v
             // printf("SPI Device Mode Set\n");
 
             p_setup->dev_fd =
-                openSPIDevice(dev_name, internal_spi_mode, 8, 500000);
+                openSPIDevice(dev_name, internal_spi_mode, 8, p_setup->spi_hz);
             /*
             if (p_setup->dev_fd  < 0 )
             {

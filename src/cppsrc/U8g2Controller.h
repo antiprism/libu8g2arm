@@ -55,6 +55,7 @@ public:
     VAL_I2C_ADDRESS, ///< I2C address (hex: from 01 to fe)
     VAL_BUS_NUMBER,  ///< bus number
     VAL_CS_NUMBER,   ///< CS number
+    VAL_SPI_MHZ,     ///< HW SPI speed in MHz
     VAL_LAST         ///< marker for last entry
   };
 
@@ -339,7 +340,7 @@ public:
    *      optional: rotation,reset,i2c_address
    *    4W_HW_SPI - 4 wire hardware SPI
    *      required: dc
-   *      optional: rotation,reset,bus_number,cs_number
+   *      optional: rotation,reset,bus_number,cs_number,spi_mhz
    *    4W_SW_SPI - 4 wire software SPI
    *      required: clock,data,cs,dc
    *      optional: rotation,reset
