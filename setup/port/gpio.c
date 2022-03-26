@@ -22,6 +22,7 @@
 */
 
 #include "gpio.h"
+#include <unistd.h>
 
 #define GPIO_FILENAME_DEFINE(pin,field) char fileName[255] = {0}; \
         sprintf(fileName, "/sys/class/gpio/gpio%d/%s", pin, field);
@@ -32,6 +33,7 @@ static int writeValueToFile(char* fileName, char* buff)
     if (fp != NULL)
     {
         fwrite(buff, strlen(buff), 1, fp);
+        fflush(fp);
         return 0;
     }
     return -1;
@@ -74,6 +76,7 @@ int exportGPIOPin(int pin)
     {
         fprintf(fp, "%d", pin);
         fclose(fp);
+        usleep(30000);
         return 0;
     }
     else
@@ -90,6 +93,7 @@ int unexportGPIOPin(int pin)
     {
         fprintf(fp, "%d", pin);
         fclose(fp);
+        usleep(30000);
         return 0;
     }
     else

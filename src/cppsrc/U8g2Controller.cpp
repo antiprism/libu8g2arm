@@ -313,7 +313,7 @@ bool ControllerSetup::init(U8G2 *u8g2, string &errmsg)
     uint8_t cs_num =
         (values[VAL_CS_NUMBER] == U8X8_PIN_NONE) ? 0 : values[VAL_CS_NUMBER];
     uint8_t spi_mhz =
-        (values[VAL_CS_NUMBER] == U8X8_PIN_NONE) ? 0 : values[VAL_SPI_MHZ];
+        (values[VAL_SPI_MHZ] == U8X8_PIN_NONE) ? 0 : values[VAL_SPI_MHZ];
     u8g2arm_arm_init_hw_spi(u8g2->getU8x8(), bus_num, cs_num, spi_mhz);
   }
   else if (com_type == "3W_SW_SPI") {
